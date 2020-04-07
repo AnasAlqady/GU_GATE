@@ -1,0 +1,313 @@
+body{
+    width: 100%;
+}
+.tab1 {
+  float: left;
+  border: 1px solid#CC4AEE ;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 2000px;
+}
+
+/* Style the buttons inside the tab */
+.tab1 button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  text-decoration-color: white;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+  background-color:#f1f1f1 ;
+}
+
+/* Create an active/current "tab button" class */
+.tab1 button.active {
+  background-color:#56164D ;
+}
+
+/* Style the tab content */
+.tab1content {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid#CC4AEE ;
+  width: 50%;
+  border-left: none;
+  height: 2000px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid#CC4AEE ;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #56164D  ;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color:#B2E3FF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid#CC4AEE ;
+  border-top: none;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+
+}
+
+.active, .accordion:hover {
+  background-color:#f1f1f1 ; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.postersid {
+  height: 2000px;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top:600px;
+  right: 0;
+  background-color: #3333;
+  overflow-x: hidden;
+  padding-top: 20p;
+}
+.postersid-1{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+.posterdown {
+  height: 45%;
+  width: 300px;
+  position:absolute;
+  z-index: 1;
+  top:2650px;
+  right: 300px;
+  background-color: #3333;
+  overflow-x: hidden;
+  padding-top: 20p;
+}
+.postersid-2{
+    height: 50%;
+    width: 50%;
+}
+.postersid12 {
+  height: 2000px;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top:200px;
+  right: 0;
+  background-color: #3333;
+  overflow-x: hidden;
+  padding-top: 20p;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url('../img/1.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header1 {
+  text-align: center;
+  padding: 32px;
+}
+
+.row1 {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn1 {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn1:hover {
+  background-color: #ddd;
+}
+
+.btn1.active {
+  background-color: #666;
+  color: white;
+}
+
+/*style the filter photo */
+.filterDiv {
+  float: left;
+  background-color: #56164D ;
+  color: #ffffff;
+  width: 100px;
+  line-height: 20px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.containerph {
+  margin-top: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+/* Style the buttons */
+.btnfil {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color:darkslateblue;
+  cursor: pointer;
+}
+
+.btnfil:hover {
+  background-color:#56164D;
+}
+
+.container2 {
+  position: relative;
+  width: 250px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.container2:hover .image {
+  opacity: 0.3;
+}
+
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: none;
+  color: white;
+  font-size: 16px;
+  padding: 2px 10px;
+}
+.buttonph {
+  padding: 15px 25px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color:#56164D;
+  border: none;
+  border-radius: 100%;
+}
+
+.buttonph:hover {background-color:#56164D}
+/*srollbar*/
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #138190; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0696AA; 
+}
+/**************************/
